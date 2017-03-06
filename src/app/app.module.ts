@@ -12,6 +12,7 @@ import { NewsListComponent } from './news-list/news-list.component';
 import { HotKeywordComponent } from './hot-keyword/hot-keyword.component';
 import { PhotoNewsSlidesComponent } from './photo-news-slides/photo-news-slides.component';
 import { WeatherComponent } from './weather/weather.component';
+import { ApiModule } from './api/api.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { WeatherComponent } from './weather/weather.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ApiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
