@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SearchApiService } from './../../api/search/search-api.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private _searchApi: SearchApiService
+  ) { }
 
   ngOnInit() {
   }
 
+
+  doSearch(e: any): void {
+    let keyword = e.target.value;
+    this._searchApi.search(keyword);
+  }
 }

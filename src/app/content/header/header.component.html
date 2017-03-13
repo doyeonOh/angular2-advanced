@@ -11,7 +11,7 @@
     <form action="" class="input-form">
       <span class="input">
         <span class="input-in">
-          <input type="search" class="search-input" id="search-input">
+          <input type="search" class="search-input" id="search-input" (keyup.enter)="doSearch($event)">
         </span>
 
       </span>
