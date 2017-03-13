@@ -1,0 +1,65 @@
+.row {
+  display: flex;
+  padding: 0px 10px;
+  width:100%;
+}
+
+.temper {
+  position: relative;
+  font-size: 35px;
+  width: 70px;
+  font-family: initial;
+  padding-left: 10px;
+}
+
+.city {
+  position: relative;
+  flex: 70%;
+  padding: 10px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: transparent;
+  background: url(https://s.pstatic.net/static/www/m/2016/sp_weather_v160628.png) no-repeat;
+  -webkit-background-size: 50px 1500px;
+  background-size: 50px 1500px;
+}
+
+
+.blind {
+  position: relative;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.blind{
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.uw_locale {
+  float: right;
+  padding-top: 10px;
+  margin-right: 15px;
+}
+
+.uw_btn_locale {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  display: block;
+  border: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: transparent;
+  z-index: 20;
+}
