@@ -1,0 +1,20 @@
+.row {
+  position: relative;
+  display: flex;
+  width:100%;
+}
+
+.photo-item {
+  width:50%;
+  flex: 1;
+  position:relative;
+  padding: 5px;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.photo-title {
+  padding: 5px;
+}
